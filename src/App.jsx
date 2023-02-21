@@ -5,13 +5,13 @@ import Detail from "./useStateExample/Detail";
 import ListNumber from "./useStateExample/ListNumber";
 import { ListPerson } from "./useStateExample/ListPerson";
 import UseEffectDemo from "./useEffectExample/UseEffectDemo";
-
+import MuiExample from "./MUI/MuiExample";
+import Home from "./routingExample/Home";
 
 const TODOS = [
-  { id: '1', task: 'Do this', completed: true },
-  { id: '2', task: 'Do that', completed: false },
+  { id: "1", task: "Do this", completed: true },
+  { id: "2", task: "Do that", completed: false },
 ];
-
 
 function App() {
   const [name, setName] = useState("kamal");
@@ -20,13 +20,18 @@ function App() {
     <div className="App">
       <h1>Hellow, {name}</h1>
       <button onClick={() => setName("Nimal")}>change name to nimal</button>
+  
       {/* <Count /> */}
       {/* <Detail /> */}
       {/* <ListNumber /> */}
-      {/* <ListPerson 
+      {/* <ListPerson
        */}
-       <UseEffectDemo />
-     
+      {/* <UseEffectDemo />
+       */}
+
+       {/* <MuiExample /> */}
+
+       {/* <Home /> */}
     </div>
   );
 }
