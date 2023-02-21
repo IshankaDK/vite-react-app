@@ -1,9 +1,17 @@
 import { useState } from "react";
-import Count from "./Count";
+import Count from "./useStateExample/Count";
 import "./App.css";
-import Detail from "./Detail";
-import ListNumber from "./ListNumber";
-import { ListPerson } from "./ListPerson";
+import Detail from "./useStateExample/Detail";
+import ListNumber from "./useStateExample/ListNumber";
+import { ListPerson } from "./useStateExample/ListPerson";
+import UseEffectDemo from "./useEffectExample/UseEffectDemo";
+
+
+const TODOS = [
+  { id: '1', task: 'Do this', completed: true },
+  { id: '2', task: 'Do that', completed: false },
+];
+
 
 function App() {
   const [name, setName] = useState("kamal");
@@ -15,7 +23,10 @@ function App() {
       {/* <Count /> */}
       {/* <Detail /> */}
       {/* <ListNumber /> */}
-      <ListPerson />
+      {/* <ListPerson 
+       */}
+       <UseEffectDemo />
+     
     </div>
   );
 }

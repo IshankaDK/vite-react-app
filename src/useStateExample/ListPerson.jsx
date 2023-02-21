@@ -15,6 +15,13 @@ export const ListPerson = () => {
       salary: 85000,
     },
   ]);
+
+  function setNewPerson(){
+    setPersonList([
+      ...personList,
+      { id: 3, name: "Suresh", age: 21, salary: 65000 },
+    ])
+  }
   return (
     <>
       {personList.map((value,index) => (
@@ -24,10 +31,7 @@ export const ListPerson = () => {
       ))}
       <button
         onClick={() =>
-          setPersonList([
-            ...personList,
-            { id: 3, name: "Suresh", age: 21, salary: 65000 },
-          ])
+          setNewPerson()
         }
       >
         add person
