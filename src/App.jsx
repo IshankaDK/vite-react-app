@@ -9,6 +9,7 @@ import MuiExample from "./MUI/MuiExample";
 import Home from "./routingExample/Home";
 import AxiosDemo1 from "./axiosExample/AxiosDemo1";
 import AxiosDemo2 from "./axiosExample/AxiosDemo2";
+import AxiosDemo3 from "./axiosExample/AxiosDemo3";
 
 const TODOS = [
   { id: "1", task: "Do this", completed: true },
@@ -16,12 +17,12 @@ const TODOS = [
 ];
 
 function App() {
-  const [name, setName] = useState("kamal");
+  // const [name, setName] = useState("kamal");
 
   return (
     <div className="App">
-      <h1>Hellow, {name}</h1>
-      <button onClick={() => setName("Nimal")}>change name to nimal</button>
+      {/* <h1>Hellow, {name}</h1>
+      <button onClick={() => setName("Nimal")}>change name to nimal</button> */}
   
       {/* <Count /> */}
       {/* <Detail /> */}
@@ -35,7 +36,8 @@ function App() {
 
        {/* <Home /> */}
 
-       <AxiosDemo2 />
+       {/* <AxiosDemo2 /> */}
+       <AxiosDemo3 />
     </div>
   );
 }
