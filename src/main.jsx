@@ -10,24 +10,24 @@ import Home from './routingExample/Home';
 import About from './routingExample/About';
 import Contact from './routingExample/Contact';
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    path: "/contact",
-    element: <Contact />,
-  },
-]);
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <Home />,
+//   },
+//   {
+//     path: "/about",
+//     element: <About />,
+//   },
+//   {
+//     path: "/contact",
+//     element: <Contact />,
+//   },
+// ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-      <RouterProvider router={router} />
-    {/* <App /> */}
+      {/* <RouterProvider router={router} /> */}
+    <App />
   </React.StrictMode>
 )

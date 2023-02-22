@@ -7,6 +7,8 @@ import { ListPerson } from "./useStateExample/ListPerson";
 import UseEffectDemo from "./useEffectExample/UseEffectDemo";
 import MuiExample from "./MUI/MuiExample";
 import Home from "./routingExample/Home";
+import AxiosDemo1 from "./axiosExample/AxiosDemo1";
+import AxiosDemo2 from "./axiosExample/AxiosDemo2";
 
 const TODOS = [
   { id: "1", task: "Do this", completed: true },
@@ -32,6 +34,8 @@ function App() {
        {/* <MuiExample /> */}
 
        {/* <Home /> */}
+
+       <AxiosDemo2 />
     </div>
   );
 }

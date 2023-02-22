@@ -13,7 +13,7 @@ const UseEffectDemo = () => {
 
   useEffect(() => {
     console.log("useEffect with empty deps array");
-    // apicallings
+    // apiCallings
   },[]);
 
   useEffect(() => {
